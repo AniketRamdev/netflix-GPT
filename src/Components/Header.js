@@ -45,7 +45,7 @@ const Header = () => {
       {user && (
         <div className="flex">
           <p>{user.displayName}</p>
-          {console.log(user)}
+          {console.log(user, "logged-In User")}
           <button onClick={handleSignOut} className=" text-white font-bold">
             (Sign-Out)
           </button>

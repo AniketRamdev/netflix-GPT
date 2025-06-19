@@ -23,7 +23,6 @@ const Login = () => {
   // const fullname = useRef(null);
 
   const handleBtnClick = () => {
-    console.log(email.current.value, password.current.value);
     const message = checkValidData(email.current.value, password.current.value);
     setErrMessage(message);
 

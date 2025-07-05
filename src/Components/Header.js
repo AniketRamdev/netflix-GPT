@@ -50,10 +50,10 @@ const Header = () => {
     dispatch(changeLanguage(e.target.value));
   };
   return (
-    <div className="absolute px-6 py2 bg-gradient-to-br from-black z-10 w-full flex justify-between">
-      <img className="w-40" src={netflixLogo} alt="logo" />
+    <div className="absolutep px-6 y2 bg-gradient-to-br from-black z-10 w-full  flex flex-col md:flex-row md:justify-between ">
+      <img className="w-40 mx-auto md:mx-0" src={netflixLogo} alt="logo" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex p-2 justify-between">
           {showGptSearch && (
             <select
               className="p-2 m-2 bg-gray-600 text-white rounded-lg"
